@@ -10,7 +10,7 @@
          
             
             foreach ($parameter as $key => $value){
-                $this->setParam($parameter, $value);
+                $this->setParam($statment, $key, $value);
             }        
         }
 
