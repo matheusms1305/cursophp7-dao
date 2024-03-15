@@ -20,11 +20,21 @@
     //echo json_encode($search);
     
 //carrega um usuario pelo login e senha
+//$usuario = new Usuario();
+//$usuario->login("jose", "123456");
+
+//echo $usuario;
+
+//INSERINDO DADOS
+//$aluno = new Usuario();
+//$aluno->insert();
+//echo $aluno;
+
+//atualizando o usuario
 $usuario = new Usuario();
-$usuario->login("jose", "123456");
 
-echo $usuario;
-
+$usuario->loadByid(2);
+$usuario->update("professor", "54321")
 
 
   /* $root = new Usuario();
