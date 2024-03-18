@@ -31,10 +31,20 @@
 //echo $aluno;
 
 //atualizando o usuario
-$usuario = new Usuario();
+//$usuario = new Usuario();
 
-$usuario->loadByid(2);
-$usuario->update("professor", "54321")
+//$usuario->loadByid(2);
+//$usuario->update("professor", "54321")
+
+//deletando um usuario
+$usuario = new Usuario();
+$usuario->loadByid(12);
+
+$usuario->delete();
+
+echo $usuario;
+
+
 
 
   /* $root = new Usuario();
